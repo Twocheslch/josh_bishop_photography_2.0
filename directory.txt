@@ -1,0 +1,32 @@
+images
+scripts
+styles
+videos
+index.html
+README.md
+images\example_shots_of_real_estate
+images\events-weddings.jpg
+images\hero-poster.jpg
+images\josh-bishop.jpg
+images\real-estate-media.jpg
+images\video-marketing.jpg
+images\example_shots_of_real_estate\white-black-boogaloo-01.webp
+images\example_shots_of_real_estate\white-black-boogaloo-03.webp
+images\example_shots_of_real_estate\white-black-boogaloo-04.webp
+images\example_shots_of_real_estate\white-black-boogaloo-05.webp
+images\example_shots_of_real_estate\white-black-boogaloo-06.webp
+images\example_shots_of_real_estate\white-black-boogaloo-08.webp
+images\example_shots_of_real_estate\white-black-boogaloo-09.webp
+images\example_shots_of_real_estate\white-black-boogaloo-10.webp
+images\example_shots_of_real_estate\white-black-boogaloo-11.webp
+images\example_shots_of_real_estate\white-black-boogaloo-13.webp
+images\example_shots_of_real_estate\white-black-boogaloo-14.webp
+images\example_shots_of_real_estate\white-black-boogaloo-15.webp
+images\example_shots_of_real_estate\white-black-boogaloo-16.webp
+scripts\main.js
+styles\styles.css
+videos\video ad service examples
+videos\b_roll_sugar_city.mp4
+videos\video ad service examples\Joseph SMith reel 1.mp4
+videos\video ad service examples\Pest informative..mp4
+videos\video ad service examples\tied up.mp4
