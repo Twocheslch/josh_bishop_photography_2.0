@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bishops Media creates cinematic video marketing, real estate media, and event coverage in Idaho." />
+  <title>Bishops Media | Photo and Video Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/main.js" defer></script>
+
+  <style>
+    .featured-work {
+      background: var(--dark);
+      border-top: 1px solid var(--line);
+    }
+
+    .portfolio-block {
+      margin-top: clamp(2rem, 5vw, 4rem);
+    }
+
+    .portfolio-block + .portfolio-block {
+      padding-top: clamp(2rem, 5vw, 4rem);
+      border-top: 1px solid var(--line);
+    }
+
+    .portfolio-block-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-block-header h3 {
+      margin: 0;
+      font-family: var(--heading-font);
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 0.95;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .portfolio-block-header p {
+      max-width: 520px;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .reel-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .reel-card,
+    .event-preview {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.035);
+      overflow: hidden;
+    }
+
+    .reel-card video,
+    .event-preview img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      background: var(--dark-soft);
+    }
+
+
+    .real-estate-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .real-estate-gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      background: var(--dark-soft);
+    }
+
+    .event-preview {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.55fr);
+      align-items: stretch;
+    }
+
+    .event-preview div {
+      display: grid;
+      align-content: center;
+      padding: clamp(1.2rem, 4vw, 3rem);
+    }
+
+    .event-preview h3 {
+      margin: 0 0 1rem;
+      font-family: var(--heading-font);
+      font-size: clamp(2.2rem, 5vw, 4.4rem);
+      line-height: 0.95;
+      text-transform: uppercase;
+    }
+
+
+    @media (max-width: 900px) {
+      .portfolio-block-header,
+      .event-preview {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .reel-grid,
+      .real-estate-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .reel-card video,
+      .event-preview img {
+        height: 360px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .reel-grid,
+      .real-estate-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <a class="logo" href="index.html" aria-label="Bishops Media home">BISHOPS <span>MEDIA</span></a>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Book Now</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-label="Bishops Media hero video">
+      <video class="hero-video" data-hero-video autoplay muted playsinline loop poster="images/hero-poster.jpg">
+        <source src="videos/b_roll_sugar_city.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Idaho photo and video production</p>
+        <h1><span>Bishops</span> <span>Media</span></h1>
+        <div class="hero-actions">
+          <a class="button primary" href="#services">View Services</a>
+          <a class="button ghost" href="#contact">Book Now</a>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#services" aria-label="Scroll to media services">
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <section class="services-section section-padding" id="services" aria-labelledby="services-title">
+      <div class="section-kicker">Services</div>
+      <div class="section-heading-grid">
+        <h2 id="services-title">Media<br>Services</h2>
+      </div>
+
+      <div class="service-grid" aria-label="Bishops Media services">
+        <a class="service-card" href="video-marketing-ads.html" aria-label="Open Video Marketing Ads page">
+          <img src="images/video-marketing.jpg" alt="Behind-the-scenes camera setup for video marketing content" loading="lazy" />
+          <div class="service-card-content">
+            <span>01</span>
+            <h3>Video Marketing Ads</h3>
+          </div>
+        </a>
+
+        <a class="service-card" href="real-estate-media.html" aria-label="Open Real Estate Media page">
+          <img src="images/real-estate-media.jpg" alt="Modern home prepared for real estate photography and video" loading="lazy" />
+          <div class="service-card-content">
+            <span>02</span>
+            <h3>Real Estate Media</h3>
+          </div>
+        </a>
+
+        <a class="service-card" href="events-weddings.html" aria-label="Open Events and Weddings page">
+          <img src="images/events-weddings.jpg" alt="Wedding or event moment captured in a cinematic style" loading="lazy" />
+          <div class="service-card-content">
+            <span>03</span>
+            <h3>Events / Weddings</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="featured-work section-padding" id="work" aria-labelledby="work-title">
+      <div class="section-kicker">Portfolio Preview</div>
+      <div class="section-heading-grid">
+        <h2 id="work-title">Featured<br>Work</h2>
+      </div>
+
+      <div class="portfolio-block" aria-labelledby="video-work-title">
+        <div class="portfolio-block-header">
+          <h3 id="video-work-title">Video Marketing Ads</h3>
+        </div>
+
+        <div class="reel-grid">
+          <article class="reel-card">
+            <video controls preload="metadata" playsinline poster="images/video-marketing.jpg">
+              <source src="videos/video%20ad%20service%20examples/Joseph%20SMith%20reel%201.mp4" type="video/mp4" />
+            </video>
+          </article>
+
+          <article class="reel-card">
+            <video controls preload="metadata" playsinline poster="images/video-marketing.jpg">
+              <source src="videos/video%20ad%20service%20examples/Pest%20informative..mp4" type="video/mp4" />
+            </video>
+          </article>
+
+          <article class="reel-card">
+            <video controls preload="metadata" playsinline poster="images/video-marketing.jpg">
+              <source src="videos/video%20ad%20service%20examples/tied%20up.mp4" type="video/mp4" />
+            </video>
+          </article>
+        </div>
+      </div>
+
+      <div class="portfolio-block" aria-labelledby="real-estate-work-title">
+        <div class="portfolio-block-header">
+          <h3 id="real-estate-work-title">Real Estate Media</h3>
+        </div>
+
+        <div class="real-estate-gallery" aria-label="Real estate photography examples">
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-01.webp" alt="Real estate media example 1" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-03.webp" alt="Real estate media example 2" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-04.webp" alt="Real estate media example 3" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-05.webp" alt="Real estate media example 4" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-06.webp" alt="Real estate media example 5" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-08.webp" alt="Real estate media example 6" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-09.webp" alt="Real estate media example 7" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-10.webp" alt="Real estate media example 8" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-11.webp" alt="Real estate media example 9" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-13.webp" alt="Real estate media example 10" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-14.webp" alt="Real estate media example 11" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-15.webp" alt="Real estate media example 12" loading="lazy" />
+          <img src="images/example_shots_of_real_estate/white-black-boogaloo-16.webp" alt="Real estate media example 13" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="portfolio-block" aria-labelledby="event-work-title">
+        <div class="event-preview">
+          <img src="images/events-weddings.jpg" alt="Events and weddings media preview" loading="lazy" />
+          <div>
+            <div class="section-kicker">Events / Weddings</div>
+            <h3 id="event-work-title">Cinematic storytelling for important moments.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-strip" aria-label="Starting prices">
+      <div>
+        <span>Real Estate</span>
+        <strong>Photo + Video from $200</strong>
+      </div>
+      <div>
+        <span>Business Marketing</span>
+        <strong>Packages from $500</strong>
+      </div>
+      <div>
+        <span>Events / Weddings</span>
+        <strong>Packages from $800</strong>
+      </div>
+    </section>
+
+    <section class="about-section section-padding" id="about" aria-labelledby="about-title">
+      <div class="about-media">
+        <img src="images/josh-bishop.jpg" alt="Josh Bishop holding a camera" loading="lazy" />
+      </div>
+
+      <div class="about-copy">
+        <div class="section-kicker">About Us</div>
+        <h2 id="about-title">Cinematic media with a modern, practical approach.</h2>
+        <blockquote>"Where listings, brands, and moments come to life."</blockquote>
+        <a class="text-link" href="#contact">Start a project</a>
+      </div>
+    </section>
+
+    <section class="contact-section section-padding" id="contact" aria-labelledby="contact-title">
+      <div class="contact-intro">
+        <div class="section-kicker">Contact</div>
+        <h2 id="contact-title">Ready to book?</h2>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <label>
+          Name
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+
+        <label>
+          Service
+          <select name="service" required>
+            <option value="">Choose a service</option>
+            <option>Video Marketing Ads</option>
+            <option>Real Estate Media</option>
+            <option>Events / Weddings</option>
+          </select>
+        </label>
+
+        <label>
+          Project Details
+          <textarea name="message" rows="5" placeholder="Date, location, square footage, coverage hours, or anything else Josh should know."></textarea>
+        </label>
+
+        <button class="button primary" type="submit">Submit Inquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Bishops Media © 2026</p>
+    <a href="#home">Back to top</a>
+  </footer>
+</body>
+</html>
