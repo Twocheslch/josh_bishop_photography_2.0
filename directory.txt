@@ -1,13 +1,17 @@
-images
+﻿images
 scripts
 styles
 videos
+directory.txt
+directory_writer.bat
 index.html
 README.md
 images\example_shots_of_real_estate
+images\video_thumbnails
 images\events-weddings.jpg
 images\hero-poster.jpg
 images\josh-bishop.jpg
+images\josh-portrait-newer.webp
 images\real-estate-media.jpg
 images\video-marketing.jpg
 images\example_shots_of_real_estate\white-black-boogaloo-01.webp
@@ -23,10 +27,13 @@ images\example_shots_of_real_estate\white-black-boogaloo-13.webp
 images\example_shots_of_real_estate\white-black-boogaloo-14.webp
 images\example_shots_of_real_estate\white-black-boogaloo-15.webp
 images\example_shots_of_real_estate\white-black-boogaloo-16.webp
+images\video_thumbnails\joesph_smith_reel.webp
+images\video_thumbnails\pest_informative.webp
+images\video_thumbnails\tied_up.webp
 scripts\main.js
 styles\styles.css
-videos\video ad service examples
-videos\b_roll_sugar_city.mp4
-videos\video ad service examples\Joseph SMith reel 1.mp4
-videos\video ad service examples\Pest informative..mp4
-videos\video ad service examples\tied up.mp4
+videos\video_ad_service_examples
+videos\b_roll_sugar_city.webm
+videos\video_ad_service_examples\joesph_smith_reel.webm
+videos\video_ad_service_examples\pest_informative.webm
+videos\video_ad_service_examples\tied_up.webm
