@@ -4,9 +4,12 @@ styles
 videos
 directory.txt
 directory_writer.bat
+events-weddings.html
 index.html
 README.md
+real-estate-media.html
 images\example_shots_of_real_estate
+images\logo
 images\video_thumbnails
 images\events-weddings.jpg
 images\hero-poster.jpg
@@ -27,6 +30,11 @@ images\example_shots_of_real_estate\white-black-boogaloo-13.webp
 images\example_shots_of_real_estate\white-black-boogaloo-14.webp
 images\example_shots_of_real_estate\white-black-boogaloo-15.webp
 images\example_shots_of_real_estate\white-black-boogaloo-16.webp
+images\logo\logo-square.webp
+images\logo\logo.png
+images\logo\logo.svg
+images\logo\logo.webp
+images\logo\logoprollybest.svg
 images\video_thumbnails\joesph_smith_reel.webp
 images\video_thumbnails\pest_informative.webp
 images\video_thumbnails\tied_up.webp
